@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../visual/style.css">
+    <script src="../script/script.js"></script>
+    <title>dados</title>
+
+</head>
+<body>
+    <div class="container" id="atividade1"> 
+        <p>Preciso que você diga duas variáveis</p>
+            <p>Digite aqui a primeira:</p>
+                <input type="text" id="x">
+            <p>Digite aqui a segunda:</p>
+                <input type="text" id="y">
+
+        <p>Diferença entre as duas variáveis:</p>
+        <p id="resultado1a"></p>
+        <button  onclick="javascript:diferençaEntreVariaveis()"> Resultado</button>
+
+        <p>O dobro da primeira mais o triplo da segunda variável:</p>
+        <p id="resultado1b"></p>
+        <button onclick="javascript:dobroXmaisTriploY()">Resultado</button>
+
+        <p>A multiplicação das duas variáveis:</p>
+        <p id="resultado1c"></p>
+        <button onclick="multEDivXY()">Resultado</button>
+
+
+        <p>Ordem das duas do maior para o menor:</p>
+        <p id="resultado1d"></p>
+        <button onclick="colocaEmOrdem()">Resultado</button>
+
+    </div>
+
+    <div class="container" id="atividade2"> 
+        <p>Calculando seu INSS com uma taxa de 8%</p>
+        <p>Nome:</p>
+        <input type="text" id="nome">
+        <p>Salário bruto:</p>
+        <input type="text" id="salarioBruto">
+
+        <!-- <p id="nome"></p> -->
+  
+        <p>Nome:</p>
+            <p id="nomee"></p>
+        <p>Salário bruto: </p>
+            <p id="salarioBrutoo"></p>
+        <p>Valor do INSS:</p>
+            <p id="valorINSS"></p>
+        <p>Salário Líquido:</p>
+            <p id="salarioLiq"></p>
+        <button  onclick="calculoINSS()">Calcular</button>
+    </div>
+
+    <div class="container" id="atividade3">
+        <p>Seu desconto do INSS baseado no quanto você ganha é</p>
+        <button onclick="descontoINSSporSalario()">Calcular</button>
+    </div>
+</body>
+</html>
